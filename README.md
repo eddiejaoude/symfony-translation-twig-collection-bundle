@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/eddiejaoude/symfony-translation-twig-collection-bundle.svg)](https://travis-ci.org/eddiejaoude/symfony-translation-twig-collection-bundle)
 [![Latest Stable Version](https://poser.pugx.org/eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle/v/stable.svg)](https://packagist.org/packages/eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle) 
 [![Total Downloads](https://poser.pugx.org/eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle/downloads.svg)](https://packagist.org/packages/eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle) 
 [![Latest Unstable Version](https://poser.pugx.org/eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle/v/unstable.svg)](https://packagist.org/packages/eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle) 
