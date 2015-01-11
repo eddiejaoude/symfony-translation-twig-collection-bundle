@@ -1,0 +1,17 @@
+language: php
+
+php:
+  - 5.5
+
+before_script:
+  - curl -s http://getcomposer.org/installer | php
+  - php composer.phar install --dev --no-interaction
+
+script:
+  - vendor/bin/phpspec run --config test/phpspec.yml
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover test/build/coverage.xml
+
+branches:
+  except:
+    - /^build-[0-9a-z\-]*/
