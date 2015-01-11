@@ -1,0 +1,18 @@
+suites:
+    default:
+        namespace: EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle
+        spec_prefix: Spec
+        spec_path: test
+
+extensions:
+  - PhpSpec\Extension\CodeCoverageExtension
+
+code_coverage:
+  whitelist:
+    - src/EddieJaoude/bundle/SymfonyTranslationTwigCollectionBundle/Twig
+  format:
+    - html
+    - clover
+  output:
+    html: test/build/coverage
+    clover: test/build/coverage.xml
