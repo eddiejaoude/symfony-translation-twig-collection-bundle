@@ -55,6 +55,15 @@ Twig template (eg. `index.html.twig`)
 {%- endfor %}
 ```
 
+Output
+
+```
+Terms Information 1
+Terms Information 2
+Terms Information 3
+Terms Information 4
+```
+
 ### Credits
 
 Inspired by **acontell** http://stackoverflow.com/questions/27868921/symfony2-translation-yaml-array-and-twig-loop
