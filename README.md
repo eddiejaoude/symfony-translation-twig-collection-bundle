@@ -45,7 +45,7 @@ termsAndConditions:
 Twig template (eg. `index.html.twig`)
 
 ```
-{% for i in range(0,'termsAndConditions.paragraph'|translength) -%}
+{% for i in range(0,'termsAndConditions.paragraph'|translationLength) -%}
     <p>{{('termsAndConditions.paragraph.'~i)|trans}}</p>
 {%- endfor %}
 ```
