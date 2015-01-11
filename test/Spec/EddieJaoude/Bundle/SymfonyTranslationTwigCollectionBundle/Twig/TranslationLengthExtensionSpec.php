@@ -4,12 +4,12 @@ namespace Spec\EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\Twig;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
-use Symfony\Component\Translation\LoggingTranslator;
+use Symfony\Component\Translation\Translator;
 
 class TranslationLengthExtensionSpec extends ObjectBehavior
 {
 
-    function let(LoggingTranslator $translator)
+    function let(Translator $translator)
     {
         $this->beConstructedWith($translator);
     }
@@ -29,18 +29,22 @@ class TranslationLengthExtensionSpec extends ObjectBehavior
         $this->getFilters()->shouldBeArray();
     }
 
-    function it_get_the_translation_length_filter(LoggingTranslator $translator)
+    function it_get_the_translation_length_filter(Translator $translator)
     {
         $translator
             ->getMessages()
             ->shouldBeCalled()
             ->willReturn(
                 array(
-                    'messages' => array('information 1', 'information 2', 'information 3')
+                    'messages' => array(
+                        'translate.me.0' => 'information 1',
+                        'translate.me.1' => 'information 1',
+                        'translate.me.2' => 'information 1',
+                    )
                 )
             );
         $this->beConstructedWith($translator);
 
-        $this->translationLengthFilter('translate.me')->shouldReturn(3);
+        $this->translationLengthFilter('translate.me')->shouldReturn(2);
     }
 }

@@ -2,7 +2,7 @@
 
 namespace EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\Twig;
 
-use Symfony\Component\Translation\LoggingTranslator;
+use Symfony\Component\Translation\TranslatorInterface;
 
 /**
  * Class TranslationLengthExtension
@@ -12,14 +12,14 @@ class TranslationLengthExtension extends \Twig_Extension
 {
 
     /**
-     * @var LoggingTranslator
+     * @var TranslatorInterface
      */
     private $translator;
 
     /**
-     * @param LoggingTranslator $translator
+     * @param TranslatorInterface $translator
      */
-    public function __construct(LoggingTranslator $translator)
+    public function __construct(TranslatorInterface $translator)
     {
         $this->translator = $translator;
     }
