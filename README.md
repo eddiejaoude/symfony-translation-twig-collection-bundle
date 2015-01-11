@@ -22,7 +22,7 @@ php composer.phar update
 ```php
    $bundles = array(
    // ...
-   new EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\EddieJaoudeSymfonyTranslationTwigCollectionBundleBundle(),
+   new EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\EddieJaoudeSymfonyTranslationTwigCollectionBundle(),
    // ...
    )
 ```
