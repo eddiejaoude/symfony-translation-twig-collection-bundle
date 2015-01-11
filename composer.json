@@ -1,0 +1,17 @@
+{
+    "name": "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle",
+    "description": "Symfony Translation Bundle for Twig Extension to handle collection",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5",
+        "symfony/twig-bundle": "*",
+        "symfony/translation": "*"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0",
+        "henrikbjorn/phpspec-code-coverage": "~0.2"
+    },
+    "autoload" : {
+        "psr-0" : { "EddieJaoude" : "src/" }
+    }
+}
