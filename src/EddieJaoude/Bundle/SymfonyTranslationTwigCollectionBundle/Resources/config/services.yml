@@ -1,0 +1,7 @@
+services:
+  twig_ext.twig.translation_length_extension:
+      class: EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\Twig\TranslationLengthExtension
+      arguments:
+          - "@translator"
+      tags:
+          - { name: twig.extension }
