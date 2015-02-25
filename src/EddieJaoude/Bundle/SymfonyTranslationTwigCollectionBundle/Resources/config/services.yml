@@ -1,3 +1,6 @@
+parameters:
+    translator.class: EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\Translator\TranslatorExtension
+
 services:
   twig_ext.twig.translation_length_extension:
       class: EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\Twig\TranslationLengthExtension

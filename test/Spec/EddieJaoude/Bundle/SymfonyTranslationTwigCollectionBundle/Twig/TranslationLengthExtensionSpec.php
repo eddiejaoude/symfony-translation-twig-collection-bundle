@@ -4,7 +4,7 @@ namespace Spec\EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\Twig;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
-use Symfony\Component\Translation\Translator;
+use EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\Translator\TranslatorExtension as Translator;
 
 class TranslationLengthExtensionSpec extends ObjectBehavior
 {
