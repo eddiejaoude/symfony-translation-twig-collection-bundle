@@ -30,7 +30,7 @@ class TranslatorExtension extends SymfonyTranslator
 	*/
 	public function getMessages($locale = null)
 	{
-		if ( false === is_callable(array($this, 'parent::getMessages') ) {
+		if ( false === is_callable(array($this, 'parent::getMessages')) ) {
 
 			if (null === $locale) {
 				$locale = $this->getLocale();
