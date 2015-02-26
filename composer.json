@@ -5,7 +5,8 @@
     "require": {
         "php": ">=5.5",
         "symfony/twig-bundle": "*",
-        "symfony/translation": "*"
+        "symfony/translation": "2.3",
+		"symfony/framework-bundle": "2.6.1"
     },
     "require-dev": {
         "phpspec/phpspec": "~2.0",
