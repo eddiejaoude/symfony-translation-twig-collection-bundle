@@ -7,7 +7,7 @@ use Symfony\Component\Translation\TranslatorInterface;
 use Symfony\Bundle\FrameworkBundle\Translation\Translator as SymfonyTranslator;
 
 /**
- * In order to ensure compatibility with Symfony 2.3, this class overrides the symfony translator component 
+ * In order to ensure compatibility with Symfony 2.3, this class extends the symfony translator component 
  * by providing the getMessages() method to the translator service, furthermore requested in the Translationlength Twig extension
  *
  * Class TranslatorExtension
