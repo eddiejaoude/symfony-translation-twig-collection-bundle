@@ -10,6 +10,7 @@ extensions:
 code_coverage:
   whitelist:
     - src/EddieJaoude/bundle/SymfonyTranslationTwigCollectionBundle/Twig
+    - src/EddieJaoude/bundle/SymfonyTranslationTwigCollectionBundle/Translator
   format:
     - html
     - clover

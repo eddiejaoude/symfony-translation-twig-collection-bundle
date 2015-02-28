@@ -2,8 +2,6 @@
 
 namespace EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\Translator;
 
-use Symfony\Component\Translation\TranslatorInterface;
-
 use Symfony\Bundle\FrameworkBundle\Translation\Translator as SymfonyTranslator;
 
 /**
