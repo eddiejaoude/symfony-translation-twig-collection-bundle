@@ -9,6 +9,11 @@
 ## Symfony Translation Twig Collection Bundle
 Symfony Translation Bundle for Twig Extension to handle collection
 
+| Version | Branch | Latest Release | 
+| ------- | ------ | -------------- |
+| Symfony 2.2+ | 2.2 | v2.2.0 |
+| Symfony 2.6+ | 2.6 | v2.6.0 |
+
 ### Installation
 
 1. Composer
