@@ -8,7 +8,7 @@ before_script:
   - php composer.phar install --no-interaction
 
 script:
-  - vendor/bin/phpspec run --config test/phpspec.yml
+  - vendor/bin/phpspec run --config test/phpspec.yml -vvv
   - wget https://scrutinizer-ci.com/ocular.phar
   - php ocular.phar code-coverage:upload --format=php-clover test/build/coverage.xml
 

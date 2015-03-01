@@ -105,13 +105,15 @@ class TranslatorExtensionSpec extends ObjectBehavior
 
 			$locale = $localeArray[$index];
 
-			if(is_null($locale)) {
+			if(null === $locale) {
 				$this->setLocale('en');					// set default locale to 'en'
-				$this->getLocale()->shouldReturn('en');
+				//$this->getLocale()->shouldReturn('en');
+			} else {
+				$this->setLocale($locale);
 			}
 
 			$locales = array_keys($resources);							//$resources contains every locale (not null)
-			$_locale = !is_null($locale) ? $locale : reset($locales);	//if locale is null, we select the first locale in $resources
+			$_locale = (null !== $locale) ? $locale : reset($locales);	//if locale is null, we select the first locale in $resources
 			$locales = array_slice($locales, 0, array_search($_locale, $locales));
 
 			$this->setFallbackLocales(array_reverse($locales));
