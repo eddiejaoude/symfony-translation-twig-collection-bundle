@@ -17,15 +17,15 @@ use EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\Translator\Transla
 class TranslatorExtensionSpec extends ObjectBehavior
 {
 
-   function let(ContainerInterface $container, MessageSelector $selector)
-    {
-        $this->beConstructedWith($container, $selector);
-    }
+	function let(ContainerInterface $container, MessageSelector $selector)
+	{
+		$this->beConstructedWith($container, $selector);
+	}
 
-    function it_is_initializable()
-    {
-        $this->shouldHaveType('EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\Translator\TranslatorExtension');
-    }
+	function it_is_initializable()
+	{
+		$this->shouldHaveType('EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\Translator\TranslatorExtension');
+	}
 
 
 	function it_gets_the_messages(Translator $translator)
@@ -42,62 +42,62 @@ class TranslatorExtensionSpec extends ObjectBehavior
 					'validators' => array(
 						'int' => 'integer (EN)',
 					)
-        );
+		);
 		$expectedPT = array(
-                    'jsmessages' => array(
-                        'foo' => 'foo (EN)',
-                        'bar' => 'bar (EN)',
-                    ),
-                    'messages' => array(
-                        'foo' => 'foo messages (PT)',
-                    ),
-                    'validators' => array(
-                        'int' => 'integer (EN)',
-                        'str' => 'integer (PT)',
-                    )
-        );
+					'jsmessages' => array(
+						'foo' => 'foo (EN)',
+						'bar' => 'bar (EN)',
+					),
+					'messages' => array(
+						'foo' => 'foo messages (PT)',
+					),
+					'validators' => array(
+						'int' => 'integer (EN)',
+						'str' => 'integer (PT)',
+					)
+		);
 		$expectedPTBR = array(
-                    'jsmessages' => array(
-                        'foo' => 'foo (EN)',
-                        'bar' => 'bar (EN)',
-                    ),
-                    'messages' => array(
-                        'foo' => 'foo messages (PT)',
-                    ),
-                    'validators' => array(
-                        'int' => 'integer (BR)',
-                        'str' => 'integer (PT)',
-                    )
-                );
+					'jsmessages' => array(
+						'foo' => 'foo (EN)',
+						'bar' => 'bar (EN)',
+					),
+					'messages' => array(
+						'foo' => 'foo messages (PT)',
+					),
+					'validators' => array(
+						'int' => 'integer (BR)',
+						'str' => 'integer (PT)',
+					)
+		);
 		$expectedResult = array ($expectedEN, $expectedEN, $expectedPT, $expectedPTBR);
 
 		$resources = array(
-            'en' => array(
-                'jsmessages' => array(
-                    'foo' => 'foo (EN)',
-                    'bar' => 'bar (EN)',
-                ),
-                'messages' => array(
-                    'foo' => 'foo messages (EN)',
-                ),
-                'validators' => array(
-                    'int' => 'integer (EN)',
-                ),
-            ),
-            'pt-PT' => array(
-                'messages' => array(
-                    'foo' => 'foo messages (PT)',
-                ),
-                'validators' => array(
-                    'str' => 'integer (PT)',
-                ),
-            ),
-            'pt_BR' => array(
-                'validators' => array(
-                    'int' => 'integer (BR)',
-                ),
-            ),
-        );
+			'en' => array(
+				'jsmessages' => array(
+					'foo' => 'foo (EN)',
+					'bar' => 'bar (EN)',
+				),
+				'messages' => array(
+					'foo' => 'foo messages (EN)',
+				),
+				'validators' => array(
+					'int' => 'integer (EN)',
+				),
+			),
+			'pt-PT' => array(
+				'messages' => array(
+					'foo' => 'foo messages (PT)',
+				),
+				'validators' => array(
+					'str' => 'integer (PT)',
+				),
+			),
+			'pt_BR' => array(
+				'validators' => array(
+					'int' => 'integer (BR)',
+				),
+			),
+		);
 		$localeArray = array(null, 'en', 'pt-PT', 'pt_BR');
 
 		// we are going to test each scenario at a time
