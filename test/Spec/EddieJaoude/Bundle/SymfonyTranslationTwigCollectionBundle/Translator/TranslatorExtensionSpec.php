@@ -107,9 +107,10 @@ class TranslatorExtensionSpec extends ObjectBehavior
 
 			if(null === $locale) {
 				$this->setLocale('en');					// set default locale to 'en'
-				//$this->getLocale()->shouldReturn('en');
+				$this->getLocale()->shouldReturn('en');
 			} else {
 				$this->setLocale($locale);
+				$this->getLocale()->shouldReturn($locale);
 			}
 
 			$locales = array_keys($resources);							//$resources contains every locale (not null)
