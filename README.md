@@ -6,6 +6,8 @@
 [![Latest Unstable Version](https://poser.pugx.org/eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle/v/unstable.svg)](https://packagist.org/packages/eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle) 
 [![License](https://poser.pugx.org/eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle/license.svg)](https://packagist.org/packages/eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle)
 
+[![DashboardHub Badge](http://dashboardhub.io/badge/551f61ab1d8852.10987203 "DashboardHub Badge")](http://dashboardhub.io/d/551f61ab1d8852.10987203)
+
 ## Symfony Translation Twig Collection Bundle
 Symfony Translation Bundle for Twig Extension to handle collection
 
